@@ -8,3 +8,19 @@
 
 
 /* End NavBar Styling */
+
+/* Photo Nav Styling */
+.photonav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+
+.photonav-item{
+  width: 33vw;
+  height: 40vh;
+}
+
+/* End PhotoNav Styling */
