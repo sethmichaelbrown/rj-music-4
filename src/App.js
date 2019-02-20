@@ -5,22 +5,29 @@ import { BrowserRouter as Router } from 'react-router-dom'
 // import Home from './components/Home'
 // import Topics from './components/Topics'
 import NavBar from './components/NavBar'
-import PhotoNav from './components/PhotoNav'
+import Header from './components/Header'
 
 import './App.css'
 
 class App extends Component {
 
   state = {
-    tester: true
+    displayHome: true
+  }
+
+  hideHome = () => {
+    const newState = { ...this.state }
+    newState.displayHome = false
+    this.setState({displayHome: newState.displayHome})
   }
 
   render() {
     return (
       <Router>
         <div className="App">
-          <NavBar />
-          <PhotoNav />
+          <Header />
+          <NavBar
+            displayHome={this.state.displayHome} />
 
         </div>
       </Router>

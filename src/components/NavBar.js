@@ -10,6 +10,7 @@ import InnerGame from './contentpages/InnerGame'
 import Store from './contentpages/Store'
 import MailingList from './contentpages/MailingList'
 import Contact from './contentpages/Contact'
+import PhotoNav from './PhotoNav.js'
 
 
 
@@ -19,19 +20,29 @@ const NavBar = (props) => {
   return (
     <div className='NavBar'>
       <div>
-         <hr />
-        <div className="navbar-flex">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/testimonials">Testimonials</Link>
-          <Link to="/workwithrobb">Work With Robb</Link>
-          <Link to="/innergame">Inner Game</Link>
-          <Link to="/store">Store</Link>
-          <Link to="/mailinglist">Mailing List</Link>
-          <Link to="/contact">Contact</Link>
+        <hr />
+        <div className="row nav-bar">
+          <div className="col-12">
+            <div className="navbar-flex">
+              <Link to="/">Home</Link>
+              <Link to="/about" onClick={props.hideHome}>About</Link>
+              <Link to="/testimonials" onClick={props.hideHome}>Testimonials</Link>
+              <Link to="/workwithrobb" onClick={props.hideHome}>Work With Robb</Link>
+              <Link to="/innergame" onClick={props.hideHome}>Inner Game</Link>
+              <Link to="/store" onClick={props.hideHome}>Store</Link>
+              <Link to="/mailinglist" onClick={props.hideHome}>Mailing List</Link>
+              <Link to="/contact" onClick={props.hideHome}>Contact</Link>
+            </div>
+          </div>
         </div>
 
-       
+        {props.displayHome ?
+        <div className="row photo-nav mt-2">
+          <div className="col-12">
+            <PhotoNav />
+          </div>
+        </div> : ''
+}
 
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />

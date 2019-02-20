@@ -12,17 +12,22 @@ const PhotoNav = (props) => {
   return (
     <div className='PhotoNav'>
       <div className="photonav-flex">
-
-        <div className="item-1" id='photo-1'>
-          <img className='photonav-item' src={recording} alt="" />
+        
+        <div className="photonav item-1" id='photo-1'>
+          <img className='photonav-item' src={soloist} alt="soloist" />
+          <div className="content">Improvisation & Soloing</div>
         </div>
 
-        <div className="item-2" id='photo-2'>
-          <img className='photonav-item' src={singer} alt="" />
+
+        <div className="photonav item-2" id='photo-2'>
+          <img className='photonav-item' src={singer} alt="singer" />
+          <div className="content">Singing & Songwriting</div>
         </div>
 
-        <div className="item-3" id='photo-3'>
-          <img className='photonav-item' src={soloist} alt="" />
+
+        <div className="photonav item-3" id='photo-3'>
+          <img className='photonav-item' src={recording} alt="recording" />
+          <div className="content">Recording</div>
         </div>
 
       </div>

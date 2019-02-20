@@ -6,10 +6,21 @@
   height: 100%;
 }
 
+.navbar-flex > a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.navbar-flex > a:hover{
+  color: blue;
+}
+
 
 /* End NavBar Styling */
 
 /* Photo Nav Styling */
+
 .photonav-flex {
   display: flex;
   align-items: center;
@@ -18,9 +29,28 @@
   height: 100%;
 }
 
-.photonav-item{
-  width: 33vw;
-  height: 40vh;
+.photonav-item {
+  width: 33.333333333333vw;
+  height: 30vw;
+}
+
+img {
+  max-width: 100%;
+}
+
+.photonav {
+  position: relative;
+}
+
+.photonav .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.75);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
 }
 
 /* End PhotoNav Styling */
