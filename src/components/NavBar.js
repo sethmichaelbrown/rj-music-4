@@ -16,15 +16,15 @@ import PhotoNav from './PhotoNav.js'
 
 
 const NavBar = (props) => {
+  // console.log('NavBar', props)
 
   return (
     <div className='NavBar'>
       <div>
-        <hr />
         <div className="row nav-bar">
           <div className="col-12">
-            <div className="navbar-flex">
-              <Link to="/">Home</Link>
+            <div className="navbar-flex py-1">
+              <Link to="/" onClick={props.showHome}>Home</Link>
               <Link to="/about" onClick={props.hideHome}>About</Link>
               <Link to="/testimonials" onClick={props.hideHome}>Testimonials</Link>
               <Link to="/workwithrobb" onClick={props.hideHome}>Work With Robb</Link>

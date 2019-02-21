@@ -15,10 +15,16 @@ class App extends Component {
     displayHome: true
   }
 
+  showHome = () => {
+    const newState = { ...this.state }
+    newState.displayHome = true
+    this.setState({ displayHome: newState.displayHome })
+  }
+
   hideHome = () => {
     const newState = { ...this.state }
     newState.displayHome = false
-    this.setState({displayHome: newState.displayHome})
+    this.setState({ displayHome: newState.displayHome })
   }
 
   render() {
@@ -27,7 +33,9 @@ class App extends Component {
         <div className="App">
           <Header />
           <NavBar
-            displayHome={this.state.displayHome} />
+            displayHome={this.state.displayHome}
+            hideHome={this.hideHome}
+            showHome={this.showHome} />
 
         </div>
       </Router>

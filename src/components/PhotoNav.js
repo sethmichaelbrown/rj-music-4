@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Link } from 'react-router-dom'
-import recording from '../images/recording.jpg'
+import recording from '../images/recording.png'
 import singer from '../images/singer.png'
 import soloist from '../images/soloist.png'
 
@@ -10,7 +10,7 @@ import '../App.css'
 const PhotoNav = (props) => {
 
   return (
-    <div className='PhotoNav'>
+    <div className='PhotoNav mt-0'>
       <div className="photonav-flex">
         
         <div className="photonav item-1" id='photo-1'>

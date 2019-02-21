@@ -1,21 +1,50 @@
+/* Body/ HTML Styling */
+body,
+html {
+  background-color: #FEF4E2;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+.main-header {
+  color: #061A75;
+  text-align: center;
+  font-style: italic
+}
+
+.sub-header {
+  color: #580C14;
+}
+
+.sub-header-2 {
+  font-style: italic
+}
+
+/* End Body/ HTML */
+
 /* NavBar Styling */
 
 .navbar-flex {
   display: flex;
   justify-content: space-around;
   height: 100%;
+  background-color: #EEE4D3;
 }
 
-.navbar-flex > a {
+.nav-bar {}
+
+.navbar-flex>a {
   text-decoration: none;
   font-size: 20px;
-  color: black;
+  color: #A9A297;
+  padding: 5px;
 }
 
-.navbar-flex > a:hover{
-  color: blue;
+.navbar-flex>a:hover {
+  color: white;
 }
-
 
 /* End NavBar Styling */
 

@@ -5,10 +5,15 @@ import '../App.css';
 const Home = (props) => {
 
   return (
-    <div className='Home'>
-      <h1>Hello from Home.js</h1>
-
+    <div className='Home container'>
+      <div className="col-md-6 float-left">
+      <h1>Video</h1>
+      </div>
+      <div className="col-md-6 float-left">
+      <h1>Text</h1>
+      </div>
     </div>
+
 
   )
 }
